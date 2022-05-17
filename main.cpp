@@ -1,5 +1,17 @@
 #include <graphics.h>
 
+ /*void click_handler_LB(){
+
+    seleccion != seleccion;
+
+ }
+ void move_handler(){
+
+ }
+
+ void pantallaCompleta(){
+
+ }*/
 int main()
 {
     /*initwindow(getmaxwidth(),getmaxheight());
@@ -23,6 +35,13 @@ int main()
 
     setcolor(RED);//ESTABLECEMOS COLOR DEL RECTANGULO
     rectangle(2,2,120,120);//DEFINIMOS E IMPRIMIMOS EL RECTANGULO
+    setfillstyle(1,RED);//Definimos el estilo del llenado y el color debe conincidir con el bprde
+    floodfill(118, 118, RED);//Rellenar un área cerrado con el color de relleno y trama
+
+    //referencias a setfilllstyle y floodfill
+    /*https://www.youtube.com/watch?v=VF9Vvre35ws&list=PL5UFsTza4wWSNhe0xuO6ELw7ORU-UHNDO&index=18
+    https://www.todoexpertos.com/categorias/tecnologia-e-internet/respuestas/875679/rellenar-circulo
+    */
 
     setcolor(WHITE);//COLOR DEL TEXTO
     settextstyle(DEFAULT_FONT,HORIZ_DIR,3);//DEFINIMOS EL ESTILO DEL TEXTO
