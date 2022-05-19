@@ -32,6 +32,8 @@ int main()
     int gd = DETECT, gm; //VARIABLES PARA EL CONTROLADOR DE GRAFICOS
     initgraph(&gd, &gm, "");//PARA CARGAR EL DRIVER DE LA GRAFICA
     initwindow(getmaxwidth(),getmaxheight(),"LOBO DOMESTICADO");
+    setbkcolor(15);//ESTABLECEMOS EL COLOR DEL FONDO
+    cleardevice();//LIMPIA LA PANTALLA CON EL COLOR DE FONDO ESTABLECIDO, LO DE ARRIBA
 
     setcolor(RED);//ESTABLECEMOS COLOR DEL RECTANGULO
     rectangle(2,2,120,120);//DEFINIMOS E IMPRIMIMOS EL RECTANGULO
@@ -43,7 +45,7 @@ int main()
     https://www.todoexpertos.com/categorias/tecnologia-e-internet/respuestas/875679/rellenar-circulo
     */
 
-    setcolor(WHITE);//COLOR DEL TEXTO
+    setcolor(BLACK);//COLOR DEL TEXTO
     settextstyle(DEFAULT_FONT,HORIZ_DIR,3);//DEFINIMOS EL ESTILO DEL TEXTO
     outtextxy(200,150,"Presione el circulo rojo para salir");
 
