@@ -21,7 +21,7 @@ void refrescarGrafica(int);
 void initScreen();
 void initializer();
 
-void addVertex();
+void agregarVertice();
 void addEdges();
 void renameVertex();
 void deleteVertex();
@@ -60,6 +60,120 @@ int findButton(int, int);
 void switchMenuItem(int);
 void menu();
 void backToMenu();
+
+//----------------------------------------------
+//PRUEBA V1 Y V2 DE IMPEMENTACION DE ARBOLES PARA SIMULACION
+//creacion de nodo
+/*
+//creacion de nodo
+struct Nodo{
+	int dato;
+	Nodo *der;
+	Nodo *izq;
+};
+//Prototipos
+ Nodo *crearNodo(int);
+void insertarNodo(Nodo *&,int);
+void menu();
+void mostrarArbol(Nodo *,int);
+
+Nodo *arbol =NULL;
+
+
+int main(){
+
+	menu();
+
+}
+
+//Funcion de menu
+void menu(){
+	int dato, opcion, contador=0;
+
+	do{
+		printf("\n Menu:\n");
+		printf("\n 1.- Insertar un nuevo nodo");
+		printf("\n 2.-Mostrar arbol completo");
+		printf("\n 3.-Salir");
+
+		scanf("%d",&opcion);
+
+		switch(opcion){
+			case 1:
+				printf("Digite un numero:");
+					scanf("%d",&dato);
+					insertarNodo(arbol,dato); //Insertamos un nuevo nodo
+					printf("\n");
+					system("pause");
+					break;
+			case 2:
+			printf("\nMostrar el arbol completo: \n\n");
+			mostrarArbol(arbol,contador);
+			printf("\n \n");
+			system("pause");
+			break;
+
+		}
+		system("cls");
+	}while(opcion != 3);
+}
+
+//Funcion para crear un nuevo nodo
+
+ Nodo *crearNodo(int n){
+	Nodo *nuevo_nodo = new Nodo();
+
+	nuevo_nodo->dato =n;
+	nuevo_nodo->der = NULL;
+	nuevo_nodo->izq = NULL;
+
+		return nuevo_nodo;
+}
+
+//Funcion para insertar elementos en el arbol
+void insertarNodo(Nodo *&arbol,int n){
+	if(arbol==NULL){ //Si el arbol esta vacio
+		struct Nodo *nuevo_nodo = crearNodo(n);
+		arbol=nuevo_nodo;
+	}
+	else{//Si el arbol tiene uno o mas de un nodo
+	int valorRaiz = arbol ->dato; //Obtener valor de la raiz
+	//n<valorRaiz
+	if(n == 0){ //Si el elemento es igual a 0, falso, insertamos a la izquierda
+		insertarNodo(arbol->izq,n);
+	}
+	else{ //sI EL ELEMENTO es diferente de 0, verdadero, insertamos a la derecha
+	insertarNodo(arbol->der,n);
+	}
+
+	}
+}
+
+//Funcion para mostrar arbolcompleto
+
+void mostrarArbol(Nodo *arbol,int contador){
+	if(arbol==NULL){
+		return;
+
+	}
+	else{
+		mostrarArbol(arbol ->der,contador+1);
+		for(int i=0;i<contador;i++){
+			printf("   ");
+		}
+		printf("%d-----\n",arbol->dato);
+		mostrarArbol(arbol->izq,contador+1);
+	}
+}
+
+struct Nodo{
+	int dato;
+	Nodo *der;
+	Nodo *izq;
+};
+*/
+//-------------------------------------------------
+
 
 int main()
 {
@@ -401,7 +515,7 @@ void printTextWlb(Type s)
 	yCursor += TEXTHIGHT;
 	printText(s);
 }
-void addVertex()
+void agregarVertice()
 {
 	dibujarZonaLimites();
 	if (listv.num == MAX_VERTEX)
@@ -633,7 +747,7 @@ void switchMenuItem(int chose)
 	switch (chose)
 	{
 
-		case ADD_VERTEX_MENU:	 	return addVertex();
+		case ADD_VERTEX_MENU:	 	return agregarVertice();
 		case ADD_EDGE_MENU: 		return addEdges();
 		case RENAME_VERTEX_MENU: 	return renameVertex();
 		case DELETEVE_MENU: 		return deleteVertex();

@@ -1,4 +1,56 @@
 # depslib dependency file v1.0
-1652825152 source:c:\users\edgar\onedrive\documentos\git\simuladorautomata\main.cpp
-	<graphics.h>
+1654696008 source:c:\users\edgar\onedrive\documentos\git\simuladorautomata\main.cpp
+	<fstream>
+	<iostream>
+	"include/colors.hpp"
+	"include/button.hpp"
+	"include/vertex.hpp"
+	"include/list_vertices.hpp"
+	"include/helpers.hpp"
+	"include/constants.hpp"
+	"include/global_variables.hpp"
+
+1654302490 c:\users\edgar\onedrive\documentos\git\simuladorautomata\include\colors.hpp
+	<windows.h>
+	<windowsx.h>
+	"graphics.h"
+
+1654302490 c:\users\edgar\onedrive\documentos\git\simuladorautomata\include\graphics.h
+	<windows.h>
+	<limits.h>
+	<sstream>
+
+1654302490 c:\users\edgar\onedrive\documentos\git\simuladorautomata\include\button.hpp
+	"graphics.h"
+	"colors.hpp"
+	"constants.hpp"
+	"helpers.hpp"
+
+1654302490 c:\users\edgar\onedrive\documentos\git\simuladorautomata\include\constants.hpp
+	<float.h>
+
+1654302490 c:\users\edgar\onedrive\documentos\git\simuladorautomata\include\helpers.hpp
+	<windows.h>
+	<cstring>
+	<sstream>
+	"graphics.h"
+	<cmath>
+
+1654302490 c:\users\edgar\onedrive\documentos\git\simuladorautomata\include\vertex.hpp
+	<cstring>
+	<cmath>
+	"graphics.h"
+	"colors.hpp"
+	"constants.hpp"
+
+1654302490 c:\users\edgar\onedrive\documentos\git\simuladorautomata\include\list_vertices.hpp
+	"graphics.h"
+	"colors.hpp"
+	"constants.hpp"
+	"vertex.hpp"
+	"helpers.hpp"
+
+1654302490 c:\users\edgar\onedrive\documentos\git\simuladorautomata\include\global_variables.hpp
+	"list_vertices.hpp"
+	"button.hpp"
 
